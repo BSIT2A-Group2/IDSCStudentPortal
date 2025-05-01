@@ -1,8 +1,72 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Dashboard";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<style>
+    .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 0;
+    }
+
+    .search-bar {
+        width: 300px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+    }
+
+    .user-profile {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 0.9em;
+    }
+
+    .welcome-card {
+        background-color: #e7f0e5;
+        border-radius: 10px;
+        padding: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+    }
+
+        .welcome-card h2 {
+            color: #2d6a2f;
+            font-weight: bold;
+        }
+
+        .welcome-card p {
+            font-size: 1.1em;
+            margin-top: 8px;
+        }
+
+    .avatar {
+        width: 80px;
+    }
+</style>
+
+<div class="topbar">
+    <input type="text" class="search-bar" placeholder="Search for Schedule, Payment History" />
+
+    <div class="user-profile">
+        <i class="bi bi-person-circle" style="font-size: 1.5em;"></i>
+        <div>
+            <strong>Maloi B.</strong><br />
+            <small>Student</small>
+        </div>
+    </div>
+</div>
+
+<div class="welcome-card mt-4">
+    <div>
+        <h2>Hi Maloi!</h2>
+        <small>BS in Information Technology, 2A</small>
+        <p class="mt-2">Welcome Back! Let’s get started with your learning journey today. Explore your schedule, grades and more.</p>
+    </div>
+    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="avatar" alt="avatar" />
 </div>
